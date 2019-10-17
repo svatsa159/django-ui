@@ -1,0 +1,141 @@
+.Top{
+  color:white;
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+  top:10vh;
+  text-align: center;
+  font-size: 5vw;
+}
+body{
+background-color:#2B2F38;
+font-family: 'Manjari', sans-serif;
+}
+.gif{
+  position: absolute;
+  width: 30vw;
+  left: 65vw;
+  top: 35vh;
+}
+.data{
+  position: absolute;
+  width: 15vw;
+  left: 42.5vw;
+  top: 87vh;
+  color:white;
+  background-color: #2B2F38;
+  border: 2px solid white;
+  font-family: 'Manjari', sans-serif;
+  text-align: center;
+}
+:root {
+    --accent: #04da97;
+    --border-width: 6px;
+    --border-radius: 55px;
+    --font-size: 30px;
+}
+
+.app{
+  position: absolute;
+  width: auto;
+  height:20vh;
+  left: 5vw;
+  top:40vh;
+  text-align: center;
+  font-size: 50px;
+}
+.app1{
+  position: absolute;
+  width: 20vw;
+  height:20vh;
+  left: 65vw;
+  top:40vh;
+  text-align: center;;
+}
+
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font-family: 'Manjari', sans-serif;
+     color: white;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+}
+
+.example_d {
+color: #04da97 !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 20px;
+position: absolute;
+top: 40vw;
+width: 10vw;
+height: 2vh;
+left: 43.5vw;
+border: 4px solid #04da97 !important;
+border-radius: 6px;
+text-decoration: none;
+transition: all 0.3s ease 0s;
+}
+.example_d:hover {
+  cursor: pointer;
+color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+.logs{
+  height: 35vh;
+  min-width:35vw;
+  background-color: rgb(53, 60, 77);
+  position: absolute;
+  right: 3vw;
+  bottom: 3vw;
+  font-family: 'Manjari', sans-serif;
+  color:white;
+  overflow-y: scroll;
+}
+
+#ss{
+  position: absolute;
+  height:5vh;
+  bottom: 43vh;
+  right:3vw;
+  width: 35vw;
+  color:white;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>API UI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/client.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="Top">
+      Caching UI
+    </div>
+    <div class="app">
+      <input type="radio" name="choice" value="one" id="radio-one" class="form-radio" checked><label for="radio-one">Cache - Redis</label><br>
+      <!-- <input type="radio" name="choice" value="one" id="radio-one" class="form-radio" checked><label for="radio-one">Cache - Memcached</label><br> -->
+      <input type="radio" name="choice" value="two" id="radio-two" class="form-radio"><label for="radio-two">No-Cache</label>
+    </div>
+    
+
+    <img src="brain-animation.gif" alt="" class="gif" id="gif">
+  
+    <div id="ss"> <h3>Logs:</h3></div>
+    <div class="logs" id="log">
+    <div id="logg" >
+     
+    </div>
+  </div>
+
+  <div class="button_cont" align="center"><a class="example_d" onclick="send()" target="_blank" rel="nofollow noopener" id="tt">Send</a></div>
+  <div class="data">
+    <h3>Result - <a id="name"></a><a id="time"></a></h3>
+  </div>
+  </body>
+
+</html>
