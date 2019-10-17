@@ -41,6 +41,8 @@ function send(){
     document.getElementById('name').innerHTML="With Cache : ";
     document.getElementById('time').innerHTML=request_time/10+"ms";
     document.getElementById('logg').innerHTML+="With Cache - "+request_time/10+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    var objDiv = document.getElementById("log");
+    objDiv.scrollTop = objDiv.scrollHeight;
   }
   else if(k==1){
     
@@ -61,6 +63,8 @@ function send(){
     document.getElementById('name').innerHTML="Without Cache : ";
     document.getElementById('time').innerHTML=request_time/10+"ms";
     document.getElementById('logg').innerHTML+="Without Cache - "+request_time/10+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    var objDiv = document.getElementById("log");
+    objDiv.scrollTop = objDiv.scrollHeight;
   }
   
 }
