@@ -87,3 +87,7 @@ function defg(){
     }
 });
 }
+function cs(){
+  document.getElementById("logg").innerHTML="";
+  
+}
