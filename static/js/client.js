@@ -28,7 +28,7 @@ function send(){
     for(var i=0;i<10;i++){
       start_time = new Date().getTime();
       $.ajax({
-        url: "http://localhost:8000/get/",
+        url: "http://139.59.63.205:8000/get/",
         type: 'GET',
         success: function(res) {
           request_time += new Date().getTime() - start_time;
@@ -48,7 +48,7 @@ function send(){
     for(var i=0;i<10;i++){
       start_time = new Date().getTime();
       $.ajax({
-        url: "http://localhost:8000/noget/",
+        url: "http://139.59.63.205:8000/noget/",
         type: 'GET',
         success: function(res) {
           request_time += new Date().getTime() - start_time;
