@@ -2,6 +2,8 @@ function refresh(){
 
 }
 function send(){
+  document.getElementById('name').innerHTML="";
+    document.getElementById('time').innerHTML="";
   document.getElementById('logg').innerHTML+=new Date().toLocaleTimeString()+"<br>";
   document.getElementById('gif').src='brain-animation.gif';
   var start_time = new Date().getTime();
