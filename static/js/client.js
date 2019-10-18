@@ -28,7 +28,7 @@ function send(){
     for(var i=0;i<10;i++){
       start_time = new Date().getTime();
       $.ajax({
-        url: "http://139.59.63.205:8000/get/",
+        url: "http://localhost:8000/get/",
         type: 'GET',
         success: function(res) {
           request_time += new Date().getTime() - start_time;
@@ -39,8 +39,8 @@ function send(){
     
     }
     document.getElementById('name').innerHTML="With Cache : ";
-    document.getElementById('time').innerHTML=request_time/10+"ms";
-    document.getElementById('logg').innerHTML+="With Cache - "+request_time/10+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    document.getElementById('time').innerHTML=request_time/100+"ms";
+    document.getElementById('logg').innerHTML+="With Cache - "+request_time/100+"ms"+"<br>"+"----------------------------------------------"+"<br>";
     var objDiv = document.getElementById("log");
     objDiv.scrollTop = objDiv.scrollHeight;
   }
@@ -50,7 +50,7 @@ function send(){
     for(var i=0;i<10;i++){
       start_time = new Date().getTime();
       $.ajax({
-        url: "http://139.59.63.205:8000/noget/",
+        url: "http://localhost:8000/noget/",
         type: 'GET',
         success: function(res) {
           request_time += new Date().getTime() - start_time;
@@ -61,8 +61,8 @@ function send(){
     
     }
     document.getElementById('name').innerHTML="Without Cache : ";
-    document.getElementById('time').innerHTML=request_time/10+"ms";
-    document.getElementById('logg').innerHTML+="Without Cache - "+request_time/10+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    document.getElementById('time').innerHTML=request_time/100+"ms";
+    document.getElementById('logg').innerHTML+="Without Cache - "+request_time/100+"ms"+"<br>"+"----------------------------------------------"+"<br>";
     var objDiv = document.getElementById("log");
     objDiv.scrollTop = objDiv.scrollHeight;
   }
