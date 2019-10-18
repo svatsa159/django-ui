@@ -25,7 +25,7 @@ function send(){
   if(k==0){
     
     var request_time=0;
-    for(var i=0;i<5;i++){
+    for(var i=0;i<1;i++){
       start_time = new Date().getTime();
       $.ajax({
         url: "http://139.59.63.205:8000/get/",
@@ -39,15 +39,15 @@ function send(){
     
     }
     document.getElementById('name').innerHTML="With Cache : ";
-    document.getElementById('time').innerHTML=request_time/10+"ms";
-    document.getElementById('logg').innerHTML+="With Cache - "+request_time/10+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    document.getElementById('time').innerHTML=request_time/5+"ms";
+    document.getElementById('logg').innerHTML+="With Cache - "+request_time/5+"ms"+"<br>"+"----------------------------------------------"+"<br>";
     var objDiv = document.getElementById("log");
     objDiv.scrollTop = objDiv.scrollHeight;
   }
   else if(k==1){
     
     var request_time=0;
-    for(var i=0;i<5;i++){
+    for(var i=0;i<1;i++){
       start_time = new Date().getTime();
       $.ajax({
         url: "http://139.59.63.205:8000/noget/",
@@ -61,8 +61,8 @@ function send(){
     
     }
     document.getElementById('name').innerHTML="Without Cache : ";
-    document.getElementById('time').innerHTML=request_time/10+"ms";
-    document.getElementById('logg').innerHTML+="Without Cache - "+request_time/10+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    document.getElementById('time').innerHTML=request_time/5+"ms";
+    document.getElementById('logg').innerHTML+="Without Cache - "+request_time/5+"ms"+"<br>"+"----------------------------------------------"+"<br>";
     var objDiv = document.getElementById("log");
     objDiv.scrollTop = objDiv.scrollHeight;
   }
