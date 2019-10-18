@@ -41,8 +41,8 @@ function send(){
     
     }
     document.getElementById('name').innerHTML="With Cache : ";
-    document.getElementById('time').innerHTML=request_time/5+"ms";
-    document.getElementById('logg').innerHTML+="With Cache - "+request_time/5+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    document.getElementById('time').innerHTML=request_time/2+"ms";
+    document.getElementById('logg').innerHTML+="With Cache - "+request_time/2+"ms"+"<br>"+"----------------------------------------------"+"<br>";
     var objDiv = document.getElementById("log");
     objDiv.scrollTop = objDiv.scrollHeight;
   }
@@ -63,8 +63,8 @@ function send(){
     
     }
     document.getElementById('name').innerHTML="Without Cache : ";
-    document.getElementById('time').innerHTML=request_time/5+"ms";
-    document.getElementById('logg').innerHTML+="Without Cache - "+request_time/5+"ms"+"<br>"+"----------------------------------------------"+"<br>";
+    document.getElementById('time').innerHTML=request_time/2+"ms";
+    document.getElementById('logg').innerHTML+="Without Cache - "+request_time/2+"ms"+"<br>"+"----------------------------------------------"+"<br>";
     var objDiv = document.getElementById("log");
     objDiv.scrollTop = objDiv.scrollHeight;
   }
