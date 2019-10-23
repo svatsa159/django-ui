@@ -74,7 +74,7 @@ function defg(){
 
   let fre={"des":10};
   $.ajax({
-    url: "http://localhost:8000/post/",
+    url: "http://139.59.63.205:8000/post/",
     type: 'POST',
     data: {
       fre : fre,
