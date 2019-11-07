@@ -41,7 +41,7 @@ overflow: hidden;
   width: auto;
   height:20vh;
   left: 5vw;
-  top:40vh;
+  top:30vh;
   text-align: center;
   font-size: 50px;
 }
@@ -151,4 +151,18 @@ transition: all 0.3s ease 0s;
 }
 #sss:hover{
   cursor: pointer;
+}
+
+.images{
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  top: 50vh;
+  overflow-y:auto;
+  left: 5vw;
+  background-color: antiquewhite;
+}
+#t2{
+  position: absolute;
+  top:35vw;
 }
